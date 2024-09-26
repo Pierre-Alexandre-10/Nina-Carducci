@@ -6,6 +6,11 @@ body {
     font-family: "Inter";
     font-style: normal;
 }
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
 .top-header {
     background-color: white;
     position: sticky;
@@ -92,6 +97,10 @@ body {
 #about-me p {
     width: 80%;
     font-size: 14px;
+}
+
+.visually-hidden {
+    color: #000;
 }
 
 .title {
