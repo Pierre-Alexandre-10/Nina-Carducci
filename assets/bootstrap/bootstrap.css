@@ -394,12 +394,14 @@ select:disabled {
     display: none;
 }
 
-/* button,
+button,
 [type=button],
 [type=reset],
-[type=submit] {
+[type=submit] 
+/* {
   -webkit-appearance: button;
 } */
+
 button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -5855,6 +5857,11 @@ fieldset:disabled .btn {
     position: relative;
     flex: 1 1 auto;
     padding: 1rem;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 100%;
 }
 
 .modal-footer {

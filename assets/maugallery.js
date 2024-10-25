@@ -136,6 +136,8 @@
                     index = i;
                 }
             });
+            // Permet de revenir à l'image précédente en evitant d'avoir un index à -1
+            index = (index - 1 + imagesCollection.length) % imagesCollection.length;
             next = imagesCollection[index] || imagesCollection[imagesCollection.length - 1];
             $(".lightboxImage").attr("src", $(next).attr("src"));
         },
@@ -169,6 +171,8 @@
                     index = i;
                 }
             });
+            // Permet de passer à l'image suivante et revenir à la première photo grâce au modulo
+            index = (index + 1) % imagesCollection.length;
             next = imagesCollection[index] || imagesCollection[0];
             $(".lightboxImage").attr("src", $(next).attr("src"));
         },
